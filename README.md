@@ -161,4 +161,6 @@ Contributions are welcome! Please feel free to open issues or submit pull reques
 
 ## License
 
-[Specify your license here, e.g., MIT License]
+[Specify your license here, e.g., MIT License]# Hidromiel Calculator
+
+Proyecto limpio y funcional.
