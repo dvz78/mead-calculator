@@ -1,0 +1,27 @@
+.error-message {
+    color: #dc3545;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    background-color: #f8d7da;
+}
+
+.error-message h4 {
+    margin: 0 0 10px 0;
+    color: #721c24;
+}
+
+.error-message p {
+    margin: 0;
+}
+
+.error-field {
+    border-color: #dc3545 !important;
+}
+
+.error-feedback {
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}

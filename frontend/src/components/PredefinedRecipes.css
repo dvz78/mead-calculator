@@ -1,0 +1,159 @@
+.predefined-recipes {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recipes-section {
+  margin-bottom: 2rem;
+}
+
+.recipes-section:last-child {
+  margin-bottom: 0;
+}
+
+.section-header {
+  margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+  margin: 0;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background: #f8fafc;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #e2e8f0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #6a7b5a;
+}
+
+.recipe-icon {
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bg-honey {
+  background: linear-gradient(135deg, #d97706, #ea580c);
+}
+
+.bg-wine {
+  background: linear-gradient(135deg, #be185d, #db2777);
+}
+
+.recipe-content {
+  padding: 1.5rem;
+}
+
+.recipe-content h4 {
+  margin: 0 0 0.5rem 0;
+  color: #2c3e50;
+}
+
+.recipe-description {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0 0 1rem 0;
+  line-height: 1.4;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-param {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #475569;
+}
+
+.recipe-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difficulty-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.difficulty-badge.fácil {
+  background: #a5b479;
+  color: white;
+}
+
+.difficulty-badge.intermedia {
+  background: #d4a373;
+  color: white;
+}
+
+.difficulty-badge.avanzada {
+  background: #e63946;
+  color: white;
+}
+
+.btn-use {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #6a7b5a, #4a573d);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.btn-use:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .predefined-recipes {
+    padding: 1.5rem;
+  }
+  
+  .recipes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-header h3 {
+    font-size: 1.25rem;
+  }
+}

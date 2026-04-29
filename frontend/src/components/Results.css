@@ -1,0 +1,66 @@
+.results-panel {
+  margin-top: 2.5rem;
+  background-color: var(--light-text);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+}
+
+.panel-header {
+  background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+  color: var(--light-text);
+  padding: 1.8rem;
+  text-align: center;
+}
+
+.panel-header h2 {
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  padding: 2.5rem;
+}
+
+.result-card {
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result-card h3 {
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--accent-color);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.ingredient-item, .profile-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px dashed #d0d0d0;
+  font-size: 1.1rem;
+}
+
+.ingredient-item:last-child, .profile-item:last-child {
+  border-bottom: none;
+}
+
+.ingredient-name, .profile-label {
+  font-weight: bold;
+}
+
+.ingredient-amount, .profile-value {
+  font-weight: bold;
+  color: var(--primary-dark);
+}

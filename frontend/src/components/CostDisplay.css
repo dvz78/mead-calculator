@@ -1,0 +1,64 @@
+.cost-display {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cost-display h3 {
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.cost-display h4 {
+    margin: 15px 0 10px 0;
+    color: #444;
+}
+
+.ingredients-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.ingredients-list th,
+.ingredients-list td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.ingredients-list th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cost-item.total {
+    font-weight: bold;
+    border-top: 2px solid #ddd;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.costs-summary,
+.pricing-analysis {
+    margin-top: 20px;
+}
+
+.pricing-analysis {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.pricing-analysis .cost-item {
+    border-color: #ddd;
+}

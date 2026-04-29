@@ -1,0 +1,128 @@
+.fermentation-tracker {
+    background-color: #fefae0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fermentation-tracker h3 {
+    color: #6a7b5a;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.reading-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    align-items: end;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #ccd5ae;
+}
+
+.reading-row:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #4a573d;
+}
+
+.input-group input,
+.input-group select {
+    padding: 0.75rem;
+    border: 2px solid #ccd5ae;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #6a7b5a;
+    box-shadow: 0 0 0 3px rgba(106, 123, 90, 0.3);
+}
+
+.btn-remove {
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem;
+    cursor: pointer;
+    height: fit-content;
+    align-self: end;
+    transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+    background: #d90429;
+}
+
+.btn-remove:disabled {
+    background: #adb5bd;
+    cursor: not-allowed;
+}
+
+.tracker-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-add, .btn-primary {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-add {
+    background: #a5b479;
+    color: white;
+}
+
+.btn-add:hover {
+    background: #8a9d5c;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #6a7b5a, #4a573d);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .reading-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .tracker-actions {
+        flex-direction: column;
+    }
+}
